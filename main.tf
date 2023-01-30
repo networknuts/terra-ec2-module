@@ -21,6 +21,7 @@ resource "aws_security_group" "mysg" {
   }
 
   tags = {
-    name = "allow_ssh"
+    env = "prod"
+    Name = "terra-server-module"
   }
 }
